@@ -1,0 +1,177 @@
+@media only screen and (max-width: 480px) {
+
+    // 01. LAYOUTS
+    // Contact
+    #body__contact {
+        display: flex;
+        flex-direction: column;
+        height: $height;
+        background-image: url(/root/assets/multimedia/images/contactMobile.jpg);
+        background-size: $background-size;
+        background-repeat: $background-repeat;
+    }
+
+    // 02. MENU AND FOOTER
+    // Menu
+    .logoResponsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    .logoResponsive a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoResponsive a img {
+        width: 30%;
+    }
+
+
+
+    // MENU
+    .menu__logo {
+        display: none;
+    }
+
+    .menuHome {
+        margin: 0.5em;
+        width: auto;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-expand-lg {
+        margin-bottom: 20%;
+    }
+
+    // ABOUT:
+    .menuAbout {
+        margin: 0.5em;
+        width: auto;
+    }
+
+    .navbarAboutContainer {
+        margin-top: 10%;
+    }
+
+
+    // SERVICES
+    .menuServices {
+        margin: 0.5em;
+        width: auto;
+    }
+
+    .navbarServices {
+        text-align: center;
+    }
+
+    .navbarServicesContainer {
+        margin-top: 20%;
+    }
+
+    // CONTACT
+    .menuContact {
+        margin: 0.5em;
+        width: auto;
+    }
+
+    .navbarContact {
+        text-align: center;
+    }
+
+    .navbarContactContainer {
+        margin-top: 15%;
+    }
+
+
+
+    // Footer
+    .footer {
+        height: 30%;
+    }
+
+    // 03. ZONES AND DIVS
+    // HOME
+
+    #title {
+        font-size: 1.5em;
+        letter-spacing: 1.8rem;
+        margin-left: 2rem;
+        text-shadow: #111826 3px 3px 2px;
+        margin-top: 0rem;
+    }
+
+    // ABOUT
+    .card__text h3 {
+        margin-bottom: 5%;
+    }
+
+    .shortText {
+        margin-top: 18%;
+        width: 70%;
+        text-align: center;
+    }
+
+    // SERVICES
+    .cardTextServicesOne {
+        padding-bottom: 35%;
+    }
+
+    .cardTextServicesOne h2 {
+        color: antiquewhite;
+    }
+
+    .cardTextServicesOne p {
+        color: antiquewhite;
+    }
+
+    #cards__services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 6%;
+    }
+
+    .cardTextServicesTwo h2 {
+        width: 70%;
+        text-align: center;
+        margin-top: -20%;
+    }
+
+    // CONTACT
+    #firstPart {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30%;
+    }
+
+    #textContact {
+        width: 70%;
+    }
+
+    #form__contact {
+        width: 70%;
+    }
+}
