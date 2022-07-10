@@ -1,106 +1,94 @@
-// HOME
-// Menu:
-.logoResponsive {
-    display: none;
-}
+//--------------------------------MENU-NAVBAR----------------------------------------------
 
+// Home -------------------------------------------------------------------------------------
+.logoResponsive {
+    display: $display-none;
+}
 
 .iCon {
     background-image: url(/root/assets/logos/list.svg);
-    width: 100%;
+    @include width(100%);
 }
 
 .navbar-toggler {
-    color: antiquewhite;
-    opacity: 50%;
-    width: 75px;
+    color: $color-white-antique;
+    @include opacity(50%);
+    @include width(75px);
 }
 
-
 .menuHome {
-    margin: 4.5em;
-    width: 3em;
+    @include margin(4.5em);
+    @include width(3em);
 }
 
 .menuHome a {
-    text-decoration: none;
-    color: azure;
-    text-shadow: #111826 2px 2px 2px;
-    width: auto;
+    text-decoration: $text-decoration-none;
+    color: $color-azure;
+    text-shadow: $text-shadow-home;
 }
 
 .menuHome a:hover {
     color: #EB8C3C;
-    text-shadow: #111826 2px 2px 2px;
+    text-shadow: $text-shadow-home;
 }
 
 #menu__logo {
-    width: 12%;
-    opacity: 70%;
+    @include width(12%);
+    @include opacity(70%);
     padding-left: 42px;
 }
 
 #menu__logo img {
-    width: 100%;
+    @include width(100%);
 }
 
 #menu__logo:hover {
-    opacity: 100%;
+    @include opacity(100%);
 }
-
 
 .navbarHome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
 }
 
 
 
-// ABOUT
-// Menu:
+// About -------------------------------------------------------------------------------------
 .menuAbout {
-    margin: 4.5em;
-    width: 3em;
+    @extend .menuHome;
 }
 
 .menuAbout a {
-    text-decoration: none;
-    color: azure;
-    text-shadow: #111826 2px 2px 2px;
-    width: auto;
+    text-decoration: $text-decoration-none;
+    color: $color-azure;
 }
 
 .menuAbout a:hover {
     color: #97303C;
-    text-shadow: #111826 2px 2px 2px;
 }
 
 .navbarAbout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .navbarHome;
 }
 
 
-// SERVICES
-// Menu:
+
+// Services -------------------------------------------------------------------------------------
 .iconService {
     background-image: url(/root/assets/logos/listDark.svg);
-    width: 100%;
+    @include width(100%);
 }
 
 .menuServices {
-    margin: 4.5em;
-    width: 3em;
+    @extend .menuHome;
 }
 
 .menuServices a {
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     color: #262626;
-    width: auto;
+    text-shadow: #111826 1px 1px 1.9px;
 }
 
 .menuServices a:hover {
@@ -108,55 +96,48 @@
 }
 
 .navbarServices {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .navbarHome;
 }
 
-// CONTACT
-// Menu:
+
+
+// Contact -------------------------------------------------------------------------------------
 .menuContact {
-    margin: 4.5em;
-    width: 3em;
+    @extend .menuHome;
 }
 
 .menuContact a {
-    text-decoration: none;
-    color: azure;
-    text-shadow: #111826 1px 2px 3px;
-    width: auto;
+    text-decoration: $text-decoration-none;
+    color: $color-azure;
 }
 
 .menuContact a:hover {
     color: #9B6826;
-    text-shadow: #111826 2px 2px 2px;
 }
 
 .navbarContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .navbarHome;
 }
 
 
 
-// Footer
+//--------------------------------FOOTER----------------------------------------------
+
+// About -------------------------------------------------------------------------------------
 .footer {
-    height: 45%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+    @include height(45%);
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    justify-content: $justify-content-center;
+    align-items: $align-items-end;
 }
 
 .footer a {
-    padding: 25px;
+    @include padding(25px);
 }
 
 .footer i {
-    color: aliceblue;
+    color: $color-azure;
 }
 
 
@@ -172,50 +153,41 @@
     color: #c4302b;
 }
 
+
+
 // Services -------------------------------------------------------------------------------------
-// Menu
-#menu__divServices {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-// Footer
 .footerServices {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 35%;
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
+    @include height(35%);
 }
 
 .footerServices a {
-    padding: 25px;
+    @include padding(25px);
 }
 
 .footerServices i {
-    color: aliceblue;
+    color: $color-azure;
 }
 
 
 
-// Contact
+// Contact -------------------------------------------------------------------------------------
 .footerContact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    margin-top: 8%;
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
+    @include height(30%);
+    @include marginTop(8%);
 }
 
 .footerContact a {
-    padding: 25px;
+    @include padding(25px);
 }
 
 .footerContact i {
-    color: aliceblue;
+    color: $color-azure;
 }

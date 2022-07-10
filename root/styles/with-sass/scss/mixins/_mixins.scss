@@ -1,0 +1,34 @@
+// Mixin
+    // Width
+    @mixin width($width) {
+        width: $width;
+    }
+
+    //Height
+    @mixin height($height) {
+        height: $height;
+    }
+
+    // Opacity
+    @mixin opacity($opacity) {
+        opacity: $opacity;
+    }
+
+    // Margin
+    @mixin margin($margin) {
+        margin: $margin;
+    }
+
+        // Margin-top
+        @mixin marginTop($marginTop) {
+            margin-top: $marginTop;
+        }
+
+        // Margin-bottom
+        @mixin marginBottom($marginBottom) {
+            margin-bottom: $marginBottom;
+        }
+
+    @mixin padding($padding) {
+        padding: $padding;
+    }

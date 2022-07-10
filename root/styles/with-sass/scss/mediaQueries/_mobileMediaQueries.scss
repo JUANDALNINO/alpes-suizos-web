@@ -3,107 +3,110 @@
     // 01. LAYOUTS
     // Contact
     #body__contact {
-        display: flex;
-        flex-direction: column;
-        height: $height;
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
         background-image: url(/root/assets/multimedia/images/contactMobile.jpg);
-        background-size: $background-size;
-        background-repeat: $background-repeat;
+        background-size: $background-size-cover;
+        background-repeat: $background-repeat-no-repeat;
+        @include height(100vh);
     }
 
     // 02. MENU AND FOOTER
+    // Home
     // Menu
     .logoResponsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 8%;
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
+        @include marginTop(8%);
     }
 
     .logoResponsive a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
     }
 
     .logoResponsive a img {
-        width: 30%;
+        @include width(30%);
     }
 
 
 
     // MENU
     .menu__logo {
-        display: none;
+        display: $display-none;
     }
 
     .menuHome {
-        margin: 0.5em;
+        @include margin(0.5em);
         width: auto;
     }
 
     .navbar-brand {
-        display: none;
+        display: $display-none;
     }
 
     .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
+        text-align: $text-align-center;
     }
 
     .navbar-expand-lg {
-        margin-bottom: 20%;
+        @include marginBottom(20%);
     }
+
+
 
     // ABOUT:
     .menuAbout {
-        margin: 0.5em;
+        @include margin(0.5em);
         width: auto;
     }
 
     .navbarAboutContainer {
-        margin-top: 10%;
+        @include marginTop(10%);
     }
 
 
     // SERVICES
     .menuServices {
-        margin: 0.5em;
+        @include margin(0.5em);
         width: auto;
     }
 
     .navbarServices {
-        text-align: center;
+        text-align: $text-align-center;
     }
 
     .navbarServicesContainer {
-        margin-top: 20%;
+        @include marginTop(20%);
     }
 
     // CONTACT
     .menuContact {
-        margin: 0.5em;
+        @include margin(0.5em);
         width: auto;
     }
 
     .navbarContact {
-        text-align: center;
+        text-align: $text-align-center;
     }
 
     .navbarContactContainer {
-        margin-top: 15%;
+        @include marginTop(15%);
     }
 
 
 
     // Footer
     .footer {
-        height: 30%;
+        @include height(30%);
     }
 
     // 03. ZONES AND DIVS
@@ -119,13 +122,13 @@
 
     // ABOUT
     .card__text h3 {
-        margin-bottom: 5%;
+        @include marginBottom(5%);
     }
 
     .shortText {
-        margin-top: 18%;
-        width: 70%;
-        text-align: center;
+        @include marginTop(18%);
+        @include width(70%);
+        text-align: $text-align-center;
     }
 
     // SERVICES
@@ -134,44 +137,44 @@
     }
 
     .cardTextServicesOne h2 {
-        color: antiquewhite;
+        color: $color-white-antique;
     }
 
     .cardTextServicesOne p {
-        color: antiquewhite;
+        color: $color-white-antique;
     }
 
     #cards__services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
     }
 
     .card {
-        margin: 6%;
+        @include margin(6%);
     }
 
     .cardTextServicesTwo h2 {
-        width: 70%;
-        text-align: center;
-        margin-top: -20%;
+        @include width(70%);
+        text-align: $text-align-center;
+        @include marginTop(-20%);
     }
 
     // CONTACT
     #firstPart {
-        display: flex;
+        display: $display-flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30%;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
+        @include marginTop(30%);
     }
 
     #textContact {
-        width: 70%;
+        @include width(70%);
     }
 
     #form__contact {
-        width: 70%;
+        @include width(70%);
     }
 }

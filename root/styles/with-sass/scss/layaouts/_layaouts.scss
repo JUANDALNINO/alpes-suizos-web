@@ -1,50 +1,39 @@
-//Variables:
-    /*1. Image Background first pages*/
-    $background-size: cover;
-    $background-repeat: no-repeat;
-    $height: 100vh;
-    $width: 100vw;
-
-//----------------------------------------------------------------------------------------------------
-
 
 // Home -------------------------------------------------------------------------------------
 #body__home {
     background-image: url(/root/assets/multimedia/images/home.jpg);
-    background-size: $background-size;
-    background-repeat: $background-repeat;
-    height: $height;
-    width: $width;
+    background-size: $background-size-cover;
+    background-repeat: $background-repeat-no-repeat;
+    @include height(100vh);
+    @include width(100vw);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @extend #body__about;
+    justify-content: $justify-content-space-between;
+    align-items: $align-items-center;
 }
 
 
 
 // About -------------------------------------------------------------------------------------
 #body__about {
-    display: flex;
-    flex-direction: column;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
 }
 
 
 
 // Services -------------------------------------------------------------------------------------
 #body__services {
-    display: flex;
-    flex-direction: column;
+    @extend #body__about;
 }
 
 
 // Contact -------------------------------------------------------------------------------------
 #body__contact {
-    display: flex;
-    flex-direction: column;
-    height: $height;
+    @extend #body__about;
+    
+    @include height(100vh);
     background-image: url(/root/assets/multimedia/images/contact.jpg);
-    background-size: $background-size;
-    background-repeat: $background-repeat;
+    background-size: $background-size-cover;
+    background-repeat: $background-repeat-no-repeat;
 }
